@@ -12,5 +12,5 @@ COPY . .
 RUN bun install
 RUN bun run db:migrate
 RUN DATABASE_URL=${DATABASE_URL} bun run build
-EXPOSE 3001
+EXPOSE 9001
 CMD ["bun", "run", "start:frontend"]

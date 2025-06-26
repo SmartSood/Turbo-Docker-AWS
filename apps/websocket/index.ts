@@ -1,7 +1,7 @@
 import prisma from "db/client";
 
 Bun.serve({
-    port: 8081,
+    port: 9002,
     fetch(req, server) {
       // upgrade the request to a WebSocket
       if (server.upgrade(req)) {
