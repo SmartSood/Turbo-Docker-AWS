@@ -1,0 +1,20 @@
+{
+  "name": "websocket",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "scripts": {
+    "build":"tsc -b",
+    "start":"node dist/index.js"
+
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+	"db": "*"
+}
+}
+  
